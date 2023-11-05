@@ -1,3 +1,20 @@
+'''
+Code generated with the help of ChatGPT
+
+The code was generated after the following promts:
+
+P1: I need an algorithm for a math problem:
+
+    I have a number of different values and want to find out which sum of values (not all values have to be used) is closest to a target value
+
+P2: Can you alter the code you provided to fit the following constraints:
+
+    The sum of integers doesn't have to be equal to the target value, just as close as possible, but never higher
+
+P3: This code returns [5,2,1] as the closets subset and 10 as the closest sum. But [5,2,1] doesn't sum up to 10
+'''
+
+
 def subset_sum_closest(values, target):
     n = len(values)
     dp = [[False] * (target + 1) for _ in range(n + 1)]
@@ -23,11 +40,3 @@ def subset_sum_closest(values, target):
             remaining_sum -= values[i - 1]
 
     return subset, closest_sum
-
-
-# Example usage
-values = [3, 6, 4, 2, 5]
-target = 1
-subset, closest_sum = subset_sum_closest(values, target)
-print("Closest subset:", subset)
-print("Sum of closest subset:", closest_sum)
