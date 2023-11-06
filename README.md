@@ -7,4 +7,4 @@ This project was carried out as part of the master's degree course Practical Sem
 <b>NO ACTUAL DATA IS INCLUDED IN THIS REPOSITORY</b>
 </p>
 
-To run the notebook, place the .CSV files provided in the GoogleDrive/data_for_machine_learning folder in the root folder.
+To run the notebook, place the .CSV files provided in the GoogleDrive/data_for_machine_learning_repository folder in the root folder.
